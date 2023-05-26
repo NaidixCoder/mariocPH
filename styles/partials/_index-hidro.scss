@@ -1,0 +1,62 @@
+.galeria-hidro{
+    @extend %displayGrid;
+    grid-template-rows: 1.1fr (repeat(5, 1fr));
+
+    @include s{
+        grid-template-rows: .7fr repeat(5, 1fr);
+    }
+
+    @include md{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr) 1fr;
+    }
+
+    .h-item1{
+        @include md{
+            grid-column: 2/3;
+        }
+    }
+    .h-item2{
+        @include md{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+    }
+    .h-item3{
+        @include md{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+    }
+    .h-item4{
+        @include md{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+    }
+    .h-item5{
+        @include md{
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+    }
+
+    .h-item6{
+        @include md{
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+    }
+    .h-item7{
+        @include md{
+            grid-column: 1/3;
+            grid-row: 4/5;
+        }
+    }
+
+    .hidro-p{
+        padding: 1rem 0 !important;
+    }
+
+}
+

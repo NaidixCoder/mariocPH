@@ -1,0 +1,41 @@
+.galeria{
+    @extend %displayGrid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr repeat(5, 1fr);
+    gap: 1rem 2rem;
+
+    @include md{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .galeria__item{
+        @extend %borderImg;
+        width: 100%;
+
+        .btn{
+
+            @include md{
+            margin-top: 2rem;
+            }
+        }
+    }
+    
+    .item1{
+        @extend %displayflex;
+        flex-direction: column;
+        text-align: center;
+        border: none;
+        
+
+        .galeria__p{
+            padding: 1rem;
+            font-size: 1.2rem;
+
+        }
+
+        .btn:hover{
+            animation-play-state: paused;
+        }
+    }
+}

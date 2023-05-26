@@ -1,0 +1,106 @@
+.quiensoy{
+    @extend %displayGrid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .3fr .5fr 1fr;
+
+    @include md{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .quiensoy__hola{
+        grid-row: 1/2;
+        color: $second-color;
+        font-family: $main-font;
+        font-size: 3.5rem;
+        font-weight: 600;
+        padding-block: 1rem;
+        animation: fade 3s ease-in-out alternate infinite;
+        @extend %fade;
+
+        @include s{
+            font-size: 4rem;
+        }
+
+        @include md{
+            grid-column: 1/2;
+            grid-row: 1/3;
+        }
+    }
+
+    .quiensoy__article{
+        @extend %displayflex;
+        flex-direction: column;
+
+
+        @include md{
+            grid-row: 1/3;
+            grid-column: 2/4;
+        }
+    
+        .quiensoy__saludo{
+            padding-block: 1rem ;
+            grid-row: 1/2;
+
+            @include md{
+                grid-column: 2/3;
+                grid-row: 1/4;
+            }
+
+            .quiensoy__subtitle{
+                font-family: $second-font;
+                color: $second-color;
+                font-size: 1.9rem;
+                text-align: center;
+
+                @include s{
+                    font-size: 2.5rem;
+                }
+            }
+
+        }
+        .quiensoy__p{
+            font-size: 1.2rem;
+            padding: .5rem 1rem;
+            text-align: justify;
+        }
+    }
+    
+    
+    .quiensoy__img{
+        text-align: center;
+        
+        @include md{
+            grid-column: 1/4;
+            grid-row: 3/5;
+            width: 100%
+        }
+    
+        .quiensoy-img{
+            @extend %borderImg;
+            object-position: top;
+            grid-row: 2/3;
+
+            @include s{
+                max-height: 300px;
+            }
+            @include md{
+                grid-column: 1/4;
+                grid-row: 3/5;
+                max-width: none;
+                max-height: 400px;
+                width: 100%;
+            }
+        }
+    }
+
+    .nav{
+        width: 80%;
+        margin: 10px !important;
+
+        .redes{
+            width: 30px;
+        }
+    }
+
+}
