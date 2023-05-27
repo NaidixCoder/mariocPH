@@ -83,8 +83,8 @@
                 </div>
                 <article class="quiensoy__article">
                     <div class="quiensoy__saludo">
-                        <h2 class="quiensoy__subtitle" data-aos-duration="8000" data-aos="fade-left" data-aos-offset="300"
-                        data-aos-easing="ease-in-sine" >Soy Mario Casadei</h2>
+                        <h2 class="quiensoy__subtitle" data-aos-duration="8000" data-aos="fade-left"
+                            data-aos-offset="300" data-aos-easing="ease-in-sine">Soy Mario Casadei</h2>
                     </div>
                     <p class="quiensoy__p">En cada clic de mi cámara, busco transmitir la belleza de estas criaturas
                         aladas, con sus colores vibrantes, sus elegantes vuelos y su peculiar comportamiento. Cada
@@ -122,17 +122,22 @@
         <!-- Registros Raros -->
         <section>
             <div class="galeria">
-                <article class="galeria__item item1">
+                <article class="galeria__item item1" data-aos="fade-down-right" data-aos-duration="1000">
                     <h2 class="galeria__title subtitle">Registros raros</h2>
                     <p class="galeria__p txt-italic">"Fotografiar especies raras es un desafío que exige paciencia
                         habilidad y perseverancia."</p>
                     <a class="btn btn-info galeria__bt" href="./pages/registros.html">Ir a registros</a>
                 </article>
-                <img src="./media/1-flamencos.jpg" alt="Flamencos" class="galeria__item item2">
-                <img src="./media/2-chingolo.jpg" alt="Chingolo" class="galeria__item item3">
-                <img src="./media/3-gaucho.jpg" alt="Gaucho" class="galeria__item item4">
-                <img src="./media/4-naranjita.jpg" alt="Naranjita" class="galeria__item item5">
-                <img src="./media/5-lechuza.jpg" alt="Lechuza" class="galeria__item item6">
+                <img src="./media/1-flamencos.jpg" alt="Flamencos" class="galeria__item item2" data-aos="fade-left"
+                    data-aos-duration="1000">
+                <img src="./media/2-chingolo.jpg" alt="Chingolo" class="galeria__item item3" data-aos="fade-right"
+                    data-aos-duration="1000">
+                <img src="./media/3-gaucho.jpg" alt="Gaucho" class="galeria__item item4" data-aos="fade-left"
+                    data-aos-duration="1000">
+                <img src="./media/4-naranjita.jpg" alt="Naranjita" class="galeria__item item5" data-aos="fade-right"
+                    data-aos-duration="1000">
+                <img src="./media/5-lechuza.jpg" alt="Lechuza" class="galeria__item item6" data-aos="fade-left"
+                    data-aos-duration="1000">
             </div>
         </section>
         <!-- Fin Registros Raros -->
@@ -149,14 +154,18 @@
                         en el mundo natural y de descubrir su encanto oculto.."</p>
                     <a class="btn btn-info galeria__bt" href="./pages/hidrohide.html">Ir a hidrohide</a>
                 </article>
-                <img src="./media/marioPH01.jpg" alt="Flamencos" class="galeria__item h-item2" data-aos="fade-down-right" data-aos-duration="1000">
-                <img src="./media/hidro01.jpg" alt="Chingolo" class="galeria__item h-item3" data-aos="fade-left" data-aos-duration="1100">
-                <img src="./media/hidro02.jpg" alt="Gaucho" class="galeria__item h-item4" data-aos="fade-right" data-aos-duration="1100">
-                <img src="./media/hidro03.jpg" alt="Naranjita" class="galeria__item h-item5" data-aos="fade-right" data-aos-duration="1100">
-                <img src="./media/hidro04.jpg" alt="Lechuza" class="galeria__item h-item6" data-aos="fade-left" data-aos-duration="1100">
+                <img src="./media/marioPH01.jpg" alt="Flamencos" class="galeria__item h-item2"
+                    data-aos="fade-down-right" data-aos-duration="1000">
+                <img src="./media/hidro01.jpg" alt="Chingolo" class="galeria__item h-item3" data-aos="fade-left"
+                    data-aos-duration="1100">
+                <img src="./media/hidro02.jpg" alt="Gaucho" class="galeria__item h-item4" data-aos="fade-right"
+                    data-aos-duration="1100">
+                <img src="./media/hidro03.jpg" alt="Naranjita" class="galeria__item h-item5" data-aos="fade-right"
+                    data-aos-duration="1100">
+                <img src="./media/hidro04.jpg" alt="Lechuza" class="galeria__item h-item6" data-aos="fade-left"
+                    data-aos-duration="1100">
                 <img src="./media/hidro05.jpg" alt="Lechuza" class="galeria__item h-item7" data-aos="fade-down"
-                data-aos-easing="linear"
-                data-aos-duration="1400">>
+                    data-aos-easing="linear" data-aos-duration="1400">
             </div>
         </section>
         <!-- Fin Hidrohide -->
@@ -174,10 +183,28 @@
                 <div class="cta__input d-flex align-items-center flex-column flex-sm-row w-100 gap-3">
                     <label for="newsletter1" class="visually-hidden">Email address</label>
                     <input id="newsletter1" type="text" class="form-control" placeholder="Dirección e-mail">
-                    <button class="btn btn-primary" type="button">Suscribite</button>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Suscribite</button>
                 </div>
             </div>
         </section>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">MarioPH</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Gracias por suscribirte, pronto estarás recibiendo las ultimas novedades.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="separator"></div>
 
