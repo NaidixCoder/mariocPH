@@ -1,5 +1,5 @@
 .hero {
-    height: calc(100vh - 120px);
+    min-height: calc(100vh - 120px);
 
     @extend %displayGrid;
     grid-template-columns: 1fr;
@@ -11,6 +11,8 @@
         padding-top: 5rem;
 
     }
+
+
 
     .hero__article {
         padding: 2rem 1rem;

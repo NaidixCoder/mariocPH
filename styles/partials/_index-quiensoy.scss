@@ -8,6 +8,9 @@
         grid-template-rows: repeat(4, 1fr);
     }
 
+    @include lg{
+        grid-template-rows: repeat(5,1fr);
+    }
     .quiensoy__hola{
         grid-row: 1/2;
         color: $second-color;
@@ -75,6 +78,12 @@
             grid-row: 3/5;
             width: 100%
         }
+
+        @include lg{
+            grid-row: 3/6;
+        }
+
+
     
         .quiensoy-img{
             @extend %borderImg;
@@ -90,6 +99,10 @@
                 max-width: none;
                 max-height: 400px;
                 width: 100%;
+            }
+            @include lg{
+                max-height: 500px;
+                max-width: 500px;
             }
         }
     }
