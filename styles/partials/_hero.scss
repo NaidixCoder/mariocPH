@@ -1,6 +1,8 @@
-.hero {
-    min-height: calc(100vh - 120px);
+.hero-section{
+    min-height: calc(100vh - 110px);
+}
 
+.hero {
     @extend %displayGrid;
     grid-template-columns: 1fr;
     grid-template-rows: .5fr 1fr;
@@ -11,7 +13,6 @@
         padding-top: 5rem;
 
     }
-
 
 
     .hero__article {
@@ -38,7 +39,21 @@
             min-height: 400px;
         }
     }
+
+
 }
+
+.hero-reg{
+        
+    .hero__reg-img{
+
+        @include lg{
+            grid-column: 2/3
+        }
+    }
+
+}
+
 
 .hero__img {
     @extend %borderImg;

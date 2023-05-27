@@ -88,8 +88,11 @@ section {
   font-weight: 600;
 }
 
+.hero-section {
+  min-height: calc(100vh - 110px);
+}
+
 .hero {
-  min-height: calc(100vh - 120px);
   grid-template-columns: 1fr;
   grid-template-rows: 0.5fr 1fr;
 }
@@ -116,6 +119,12 @@ section {
 @media screen and (min-width: 768px) {
   .hero .hero__img {
     min-height: 400px;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .hero-reg .hero__reg-img {
+    grid-column: 2/3;
   }
 }
 
@@ -455,10 +464,7 @@ section {
   resize: none;
 }
 
-#section-galeria {
-  margin-inline: 3%;
-}
-#section-galeria #second-bar {
+#second-bar {
   margin-top: 2rem !important;
   margin-bottom: 1rem !important;
   display: flex;
@@ -466,18 +472,28 @@ section {
   width: 100%;
   text-align: center;
 }
-#section-galeria #second-bar a {
+#second-bar a {
   color: #212529;
 }
-#section-galeria .dropdown-toggle {
+#second-bar .dropdown-toggle {
   padding: 0;
   font-size: 1.3rem;
 }
-#section-galeria .dropdown-item:hover {
+#second-bar .dropdown-item:hover {
   background-color: #2FDDE0;
 }
-#section-galeria .separator-nav {
-  margin: 1rem 0 !important;
+
+.separator-nav {
+  margin: 0 3% 2rem !important;
+}
+@media screen and (min-width: 768px) {
+  .separator-nav {
+    margin: 0 15% 2rem !important;
+  }
+}
+
+#section-galeria {
+  margin-inline: 3%;
 }
 #section-galeria .galeria-display {
   grid-template-columns: 1fr;
@@ -725,6 +741,7 @@ section {
 /* Paginador */
 .pagination {
   justify-content: center;
+  margin-top: 1.4rem;
 }
 .pagination .page-link {
   color: #212529 !important;
@@ -742,6 +759,57 @@ section {
 @media screen and (min-width: 1400px) {
   .pagination {
     grid-column: 1/6;
+  }
+}
+
+.hero-hidro {
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .hero-hidro {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .hero-hidro {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.hero-hidro p {
+  padding-inline: 0 !important;
+}
+@media screen and (min-width: 768px) {
+  .hero-hidro p {
+    padding-inline: 1rem !important;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .hero-hidro p {
+    padding-inline: 0 !important;
+  }
+}
+.hero-hidro .article-hidro {
+  padding: 1rem 0 0 0;
+}
+@media screen and (min-width: 768px) {
+  .hero-hidro .article-hidro {
+    padding: 3rem;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .hero-hidro .article-hidro {
+    padding: 0rem;
+  }
+}
+.hero-hidro .hero__img-hidro {
+  min-width: 300px;
+  min-height: 350px;
+  -o-object-position: left;
+     object-position: left;
+}
+@media screen and (min-width: 768px) {
+  .hero-hidro .hero__img-hidro {
+    min-width: 320px;
   }
 }
 

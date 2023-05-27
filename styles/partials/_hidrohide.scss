@@ -1,0 +1,44 @@
+.hero-hidro{
+    padding: 0;
+
+    @include md{
+        grid-template-columns: 1fr;
+    }
+
+    @include lg{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    p{
+        padding-inline: 0 !important;
+
+        @include md{
+            padding-inline: 1rem !important;
+        }
+        @include lg{
+            padding-inline: 0 !important;
+        }
+    }
+
+    .article-hidro{
+        padding: 1rem 0 0 0;
+
+        @include md{
+            padding: 3rem;
+        }
+        @include lg{
+            padding: 0rem;
+        }
+    }
+
+    .hero__img-hidro{
+        min-width: 300px;
+        min-height: 350px;
+        object-position: left ;
+
+        @include md{
+            min-width: 320px;
+        }
+
+    }
+}

@@ -1,31 +1,38 @@
-#section-galeria {
-    margin-inline: 3%;
+#second-bar {
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    text-align: center;
 
-    #second-bar {
-        margin-top: 2rem !important;
-        margin-bottom: 1rem !important;
-        display: flex;
-        justify-content: start;
-        width: 100%;
-        text-align: center;
-
-        a {
-            color: #212529;
-        }
+    a {
+        color: #212529;
     }
 
     .dropdown-toggle {
         padding: 0;
         font-size: 1.3rem;
     }
-
+    
     .dropdown-item:hover {
         background-color: $main-color;
     }
+    
+}
 
-    .separator-nav {
-        margin: 1rem 0 !important;
+.separator-nav {
+    margin: 0 3% 2rem !important;
+
+    @include md{
+        margin: 0 15% 2rem !important;
     }
+    
+}
+
+
+#section-galeria {
+    margin-inline: 3%;
 
     .galeria-display {
         @extend %displayGrid;
@@ -199,6 +206,7 @@
 /* Paginador */
 .pagination {
     justify-content: center;
+    margin-top: 1.4rem;
 
     .page-link {
         color: $bg-color !important;
