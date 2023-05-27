@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Roboto+Slab:wght@400;500&display=swap");
-#section-galeria .galeria-display .card .card-body, #section-form .form-content, #section-form, .galeria .item1, .quiensoy .quiensoy__article, .hero .hero__article {
+.img-box .close, #section-galeria .galeria-display .card .card-body, #section-form .form-content, #section-form, .galeria .item1, .quiensoy .quiensoy__article, .hero .hero__article {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,10 +86,6 @@ section {
 
 .btn {
   font-weight: 600;
-}
-
-.fa-solid {
-  font-weight: 900;
 }
 
 .hero-section {
@@ -705,10 +701,11 @@ section {
   transition: 0.3s ease-in-out;
 }
 .img-box img {
-  max-width: 65vw;
+  max-width: 80vw;
   max-height: 80vh;
   -o-object-fit: contain;
      object-fit: contain;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4705882353);
 }
 .img-box .back,
 .img-box .next,
@@ -728,12 +725,14 @@ section {
   position: absolute;
   top: 3rem;
   right: 3rem;
-  font-size: 1.5rem;
   box-shadow: 0 0 5px #fff;
+}
+.img-box .fa-solid {
+  scale: 1.5;
 }
 .img-box .back,
 .img-box .next {
-  margin-inline: 1rem;
+  margin-inline: 2rem;
 }
 
 /* Paginador */

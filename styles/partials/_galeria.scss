@@ -163,9 +163,10 @@
     }
 
     img {
-        max-width: 65vw;
+        max-width: 80vw;
         max-height: 80vh;
         object-fit: contain;
+        box-shadow: 0 0 10px #ffffff78;
     }
 
     .back,
@@ -187,13 +188,17 @@
         position: absolute;
         top: 3rem;
         right: 3rem;
-        font-size: 1.5rem;
         box-shadow: 0 0 5px #fff;
+        @extend %displayflex;
+    }
+
+    .fa-solid{
+        scale: 1.5;
     }
 
     .back,
     .next {
-        margin-inline: 1rem;
+        margin-inline: 2rem;
     }
 }
 
