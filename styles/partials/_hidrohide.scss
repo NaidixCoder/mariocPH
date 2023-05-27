@@ -42,3 +42,31 @@
 
     }
 }
+
+.hero-reg{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    @include lg{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .article-hidro{
+
+        @include lg{
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+
+    }
+        
+    .hero__reg-img{
+
+        @include lg{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+    }
+
+}
