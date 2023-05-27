@@ -701,7 +701,7 @@ section {
   transition: 0.3s ease-in-out;
 }
 .img-box img {
-  max-width: 80vw;
+  max-width: 60vw;
   max-height: 80vh;
   -o-object-fit: contain;
      object-fit: contain;
@@ -732,7 +732,7 @@ section {
 }
 .img-box .back,
 .img-box .next {
-  margin-inline: 2rem;
+  margin-inline: 1.2rem;
 }
 
 /* Paginador */
